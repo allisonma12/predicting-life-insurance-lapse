@@ -9,6 +9,7 @@ mask = df["PAYMENT MODE"] == "Quaterly"
 df.loc[mask, "PAYMENT MODE"] = "Quarterly"
 print("Fixed 'Quaterly' -> 'Quarterly':", mask.sum())
 
+
 mask = df["Premium"] <= 0
 df.loc[mask, "Premium"] = None
 print("Premium <= 0 set to missing:", mask.sum())
