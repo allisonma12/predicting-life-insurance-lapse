@@ -103,8 +103,6 @@ plt.tight_layout()
 RocCurveDisplay.from_predictions(y_test, y_prob, name=MODEL_NAME, plot_chance_level=True)
 plt.title(f"ROC Curve - {MODEL_NAME}")
 plt.tight_layout()
-<<<<<<< HEAD
-=======
 
 
 
@@ -163,5 +161,4 @@ plt.tight_layout()
 RocCurveDisplay.from_predictions(y_test, y_prob_tuned, name=f"Tuned {MODEL_NAME}", plot_chance_level=True)
 plt.title(f"ROC Curve - Tuned {MODEL_NAME}")
 plt.tight_layout()
->>>>>>> 9ff7f2fbe6aad58ccac2f094143248e2a93444d2
 plt.show()
