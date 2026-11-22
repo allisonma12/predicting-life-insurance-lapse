@@ -111,8 +111,8 @@ from sklearn.model_selection import StratifiedKFold, GridSearchCV
 
 # REPLACE WITH HYPERPARAMETERS SPECIFIC TO YOUR MODEL 
 param_grid = {
-    "C": [0.01, 0.1, 1, 10],
-    "class_weight": [None, "balanced"],
+    "C": [0.01, 0.05, 0.1, 0.5, 1, 2, 5, 10],
+    "class_weight": [None, "balanced"]
 }
 
 REFIT_METRIC = "f1_macro"
